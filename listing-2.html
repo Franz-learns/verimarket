@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Chair — VeriMarket</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .listing-wrap{max-width:900px; margin:0 auto;}
+  .listing-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  .listing-photo{
+    width:100%; aspect-ratio:1/1; border-radius:var(--radius); background:linear-gradient(135deg,#E0E7FF,#CFFAFE);
+    display:flex; align-items:center; justify-content:center; font-size:60px; overflow:hidden;
+  }
+  .listing-photo img{width:100%; height:100%; object-fit:cover;}
+  .listing-price{font-size:28px; font-weight:800; color:var(--primary); margin:10px 0 6px;}
+  .listing-meta{font-size:13.5px; color:var(--light-text); margin-bottom:20px;}
+  .seller-box{
+    display:flex; align-items:center; gap:12px; background:var(--grad-soft); border-radius:14px;
+    padding:14px 16px; margin-bottom:24px;
+  }
+  .seller-avatar{width:40px; height:40px; border-radius:50%; background:var(--grad); flex-shrink:0;}
+  .seller-name{font-weight:700; font-size:14.5px;}
+  .verified-tag{color:#15803D; font-size:12.5px; font-weight:700;}
+  .unverified-tag{color:var(--light-text); font-size:12.5px;}
+  .inquire-box{background:var(--card); border:1px solid #EEF2F7; border-radius:14px; padding:20px;}
+  .inquire-box textarea{
+    width:100%; min-height:90px; padding:13px 16px; border-radius:12px; border:1px solid #E2E8F0;
+    font-family:'Inter',sans-serif; font-size:14.5px; resize:vertical; margin-bottom:12px;
+  }
+  .inquire-box textarea:focus{outline:none; border-color:var(--primary);}
+  .alert-error{background:rgba(239,68,68,0.08); color:#B91C1C; border:1px solid rgba(239,68,68,0.2); border-radius:12px; padding:12px 14px; font-size:13.5px; margin-bottom:12px;}
+  @media (max-width:720px){ .listing-grid{grid-template-columns:1fr;} }
+</style>
+<link rel="stylesheet" href="css/static.css"></head>
+<body><aside class="static-banner"><strong>Static HTML preview</strong><span>Original VeriMarket design · sample listings and account states · no live transactions</span><a href="backend-required.html">About this version →</a></aside>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="logo-mark">V</span>VeriMarket</a>
+    <ul class="nav-links" id="static-nav-links">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="index.html#solution">How It Works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#stats">Safety</a></li>
+      <li><a href="index.html#compare">Pricing</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+              <a href="login.html" class="link-btn">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="static-nav-links">☰</button>
+  </nav>
+</header>
+
+<section style="padding:60px 0;">
+  <div class="container listing-wrap">
+
+    
+      <div class="listing-grid">
+        <div>
+          <div class="listing-photo">
+            🛍️          </div>
+        </div>
+
+        <div>
+                    <h2 style="margin-top:8px;">Reading Chair</h2>
+          <div class="listing-price">£65.00</div>
+          <div class="listing-meta">Home &amp; Garden · Posted 2026-10-25 10:00:16</div>
+
+          <p style="margin-bottom:24px; line-height:1.6; color:var(--dark);">Illustrative listing for the static HTML preview. No item is offered for sale.</p>
+
+          <div class="seller-box">
+            <div class="seller-avatar"></div>
+            <div>
+              <div class="seller-name">Example Seller</div>
+                              <div class="verified-tag">✅ Verified Seller</div>
+                          </div>
+          </div>
+
+                      <a href="login.html" class="btn btn-primary" style="width:100%; text-align:center; display:block;">Log In to Message Seller</a>
+                  </div>
+      </div>
+
+      </div>
+</section>
+
+<script src="js/main.js"></script><script src="js/static.js"></script></body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace — VeriMarket</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .search-bar{display:flex; gap:10px; max-width:480px; margin:0 auto 40px;}
+  .search-bar input{
+    flex:1; padding:13px 16px; border-radius:12px; border:1px solid #E2E8F0;
+    font-family:'Inter',sans-serif; font-size:14.5px;
+  }
+  .search-bar input:focus{outline:none; border-color:var(--primary);}
+  .prod-card a.card-link{display:block; color:inherit; text-decoration:none;}
+  .empty-state{text-align:center; padding:60px 20px; color:var(--light-text);}
+</style>
+<link rel="stylesheet" href="css/static.css"></head>
+<body><aside class="static-banner"><strong>Static HTML preview</strong><span>Original VeriMarket design · sample listings and account states · no live transactions</span><a href="backend-required.html">About this version →</a></aside>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="logo-mark">V</span>VeriMarket</a>
+    <ul class="nav-links" id="static-nav-links">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="index.html#solution">How It Works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#stats">Safety</a></li>
+      <li><a href="index.html#compare">Pricing</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+              <a href="login.html" class="link-btn">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="static-nav-links">☰</button>
+  </nav>
+</header>
+
+<section style="padding:60px 0;">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:20px;">
+      <span class="eyebrow">Marketplace</span>
+      <h2>Shop From Verified Sellers Only</h2>
+      <p>Every listing below comes from an ID-verified, reviewed account.</p>
+    </div>
+
+    <form class="search-bar" id="preview-search">
+      <input type="text" name="q" placeholder="Search listings..." value="">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form><p class="search-result" aria-live="polite"></p>
+
+          <div class="grid-market">
+                  <div class="prod-card">
+            <a href="listing-1.html" class="card-link">
+              <div class="prod-img">
+                🛍️              </div>
+              <div class="prod-body">
+                <div class="prod-title">Wireless Headphones</div>
+                <div class="prod-price">£85.00</div>
+                <div class="prod-meta">
+                  <span>Electronics</span>
+                  <span>Example Seller ✓</span>
+                </div>
+                <div class="prod-footer">
+                  <span class="trust-pill">Verified Seller</span>
+                </div>
+              </div>
+            </a>
+          </div>
+                  <div class="prod-card">
+            <a href="listing-2.html" class="card-link">
+              <div class="prod-img">
+                🛍️              </div>
+              <div class="prod-body">
+                <div class="prod-title">Reading Chair</div>
+                <div class="prod-price">£65.00</div>
+                <div class="prod-meta">
+                  <span>Home &amp; Garden</span>
+                  <span>Example Seller ✓</span>
+                </div>
+                <div class="prod-footer">
+                  <span class="trust-pill">Verified Seller</span>
+                </div>
+              </div>
+            </a>
+          </div>
+                  <div class="prod-card">
+            <a href="listing-3.html" class="card-link">
+              <div class="prod-img">
+                🛍️              </div>
+              <div class="prod-body">
+                <div class="prod-title">Digital Camera</div>
+                <div class="prod-price">£240.00</div>
+                <div class="prod-meta">
+                  <span>Electronics</span>
+                  <span>Example Seller ✓</span>
+                </div>
+                <div class="prod-footer">
+                  <span class="trust-pill">Verified Seller</span>
+                </div>
+              </div>
+            </a>
+          </div>
+              </div>
+      </div>
+</section>
+
+<script src="js/main.js"></script><script src="js/static.js"></script></body>
+</html>

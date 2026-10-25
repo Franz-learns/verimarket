@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Listings — VeriMarket</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .my-wrap{max-width:900px; margin:0 auto;}
+  .my-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:30px; flex-wrap:wrap; gap:14px;}
+  .my-card{
+    display:flex; gap:18px; align-items:center; background:var(--card); border:1px solid #EEF2F7;
+    border-radius:var(--radius); padding:18px; box-shadow:var(--shadow-sm); margin-bottom:16px; flex-wrap:wrap;
+  }
+  .my-thumb{
+    width:80px; height:80px; border-radius:12px; background:linear-gradient(135deg,#E0E7FF,#CFFAFE);
+    display:flex; align-items:center; justify-content:center; font-size:28px; flex-shrink:0; overflow:hidden;
+  }
+  .my-thumb img{width:100%; height:100%; object-fit:cover;}
+  .my-body{flex:1; min-width:180px;}
+  .my-title{font-weight:700; font-size:15.5px;}
+  .my-meta{font-size:12.5px; color:var(--light-text); margin-top:3px;}
+  .my-actions{display:flex; gap:8px; flex-wrap:wrap;}
+  .btn-sm{padding:8px 14px; font-size:13px; border-radius:10px; border:none; cursor:pointer; font-weight:700; text-decoration:none; display:inline-block;}
+  .btn-edit{background:var(--grad-soft); color:var(--primary);}
+  .btn-sold{background:rgba(234,179,8,0.12); color:#A16207;}
+  .btn-active{background:rgba(34,197,94,0.12); color:#15803D;}
+  .btn-delete{background:rgba(239,68,68,0.1); color:#B91C1C;}
+  .badge-pill{display:inline-block; padding:3px 10px; border-radius:999px; font-size:11px; font-weight:700; margin-left:8px;}
+  .badge-active{background:rgba(34,197,94,0.12); color:#15803D;}
+  .badge-sold{background:rgba(234,179,8,0.12); color:#A16207;}
+  .empty-state{text-align:center; padding:60px 20px; color:var(--light-text);}
+</style>
+<link rel="stylesheet" href="css/static.css"></head>
+<body><aside class="static-banner"><strong>Static HTML preview</strong><span>Original VeriMarket design · sample listings and account states · no live transactions</span><a href="backend-required.html">About this version →</a></aside>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="logo-mark">V</span>VeriMarket</a>
+    <ul class="nav-links" id="static-nav-links">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="index.html#solution">How It Works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#stats">Safety</a></li>
+      <li><a href="index.html#compare">Pricing</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+              <a href="my_listings.html" class="link-btn">Sell</a>
+        <a href="messages.html" class="link-btn">
+          Messages<span class="msg-badge">1</span>        </a>
+        <span style="font-size:14px; font-weight:600; margin-right:6px;">
+          Hi, Example Seller ✓        </span>
+        <a href="verify.html" class="link-btn">Verified</a>
+        <a href="index.html" class="btn btn-primary">Log Out</a>
+          </div>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="static-nav-links">☰</button>
+  </nav>
+</header>
+
+<section style="padding:60px 0;">
+  <div class="container my-wrap">
+    <div class="my-top">
+      <div>
+        <span class="eyebrow">🛍️ Seller Dashboard</span>
+        <h2 style="font-size:24px; margin-top:4px;">My Listings</h2>
+      </div>
+      <a href="listing_form.html" class="btn btn-primary">+ New Listing</a>
+    </div>
+
+    
+          <div class="my-card">
+        <div class="my-thumb">
+          🛍️        </div>
+        <div class="my-body">
+          <div class="my-title">
+            <a href="listing-1.html" style="color:inherit; text-decoration:none;">Wireless Headphones</a>
+            <span class="badge-pill badge-active">ACTIVE</span>
+          </div>
+          <div class="my-meta">£85.00 · Electronics · Posted 2026-10-25 10:00:16</div>
+        </div>
+        <div class="my-actions">
+          <a href="listing_form.html" class="btn-sm btn-edit">Edit</a>
+          <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+                        <input type="hidden" name="listing_id" value="1">
+                          <button type="submit" name="action" value="mark_sold" class="btn-sm btn-sold">Mark Sold</button>
+                      </fieldset></form>
+          <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+                        <input type="hidden" name="listing_id" value="1">
+            <button type="submit" name="action" value="delete" class="btn-sm btn-delete">Delete</button>
+          </fieldset></form>
+        </div>
+      </div>
+          <div class="my-card">
+        <div class="my-thumb">
+          🛍️        </div>
+        <div class="my-body">
+          <div class="my-title">
+            <a href="listing-2.html" style="color:inherit; text-decoration:none;">Reading Chair</a>
+            <span class="badge-pill badge-active">ACTIVE</span>
+          </div>
+          <div class="my-meta">£65.00 · Home &amp; Garden · Posted 2026-10-25 10:00:16</div>
+        </div>
+        <div class="my-actions">
+          <a href="listing_form.html" class="btn-sm btn-edit">Edit</a>
+          <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+                        <input type="hidden" name="listing_id" value="2">
+                          <button type="submit" name="action" value="mark_sold" class="btn-sm btn-sold">Mark Sold</button>
+                      </fieldset></form>
+          <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+                        <input type="hidden" name="listing_id" value="2">
+            <button type="submit" name="action" value="delete" class="btn-sm btn-delete">Delete</button>
+          </fieldset></form>
+        </div>
+      </div>
+          <div class="my-card">
+        <div class="my-thumb">
+          🛍️        </div>
+        <div class="my-body">
+          <div class="my-title">
+            <a href="listing-3.html" style="color:inherit; text-decoration:none;">Digital Camera</a>
+            <span class="badge-pill badge-active">ACTIVE</span>
+          </div>
+          <div class="my-meta">£240.00 · Electronics · Posted 2026-10-25 10:00:16</div>
+        </div>
+        <div class="my-actions">
+          <a href="listing_form.html" class="btn-sm btn-edit">Edit</a>
+          <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+                        <input type="hidden" name="listing_id" value="3">
+                          <button type="submit" name="action" value="mark_sold" class="btn-sm btn-sold">Mark Sold</button>
+                      </fieldset></form>
+          <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+                        <input type="hidden" name="listing_id" value="3">
+            <button type="submit" name="action" value="delete" class="btn-sm btn-delete">Delete</button>
+          </fieldset></form>
+        </div>
+      </div>
+      </div>
+</section>
+
+<script src="js/main.js"></script><script src="js/static.js"></script></body>
+</html>

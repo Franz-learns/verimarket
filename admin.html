@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification Queue — VeriMarket Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body{background:#F8FAFC;}
+  .admin-wrap{max-width:960px; margin:0 auto; padding:50px 24px 100px;}
+  .admin-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;}
+  .queue-card{
+    background:var(--card); border:1px solid #EEF2F7; border-radius:var(--radius);
+    padding:26px; box-shadow:var(--shadow-sm); margin-bottom:20px;
+  }
+  .queue-head{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:16px;}
+  .queue-head h4{font-size:17px; margin-bottom:4px;}
+  .queue-head .meta{font-size:13px; color:var(--light-text);}
+  .doc-links{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0;}
+  .doc-links a{
+    font-size:13px; font-weight:600; padding:8px 14px; border-radius:10px;
+    background:var(--grad-soft); color:var(--primary); text-decoration:none;
+  }
+  .doc-links a:hover{background:#E9E3FF;}
+  .review-form{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:14px;}
+  .review-form input[type="text"]{
+    flex:1; min-width:200px; padding:10px 14px; border-radius:10px; border:1px solid #E2E8F0; font-size:13.5px;
+  }
+  .btn-sm{padding:9px 18px; font-size:13.5px; border-radius:10px; border:none; cursor:pointer; font-weight:700;}
+  .btn-approve{background:#16A34A; color:#fff;}
+  .btn-reject{background:#DC2626; color:#fff;}
+  .badge-pill{display:inline-block; padding:4px 12px; border-radius:999px; font-size:11.5px; font-weight:700;}
+  .badge-pending{background:rgba(234,179,8,0.12); color:#A16207;}
+  .badge-approved{background:rgba(34,197,94,0.12); color:#15803D;}
+  .badge-rejected{background:rgba(239,68,68,0.12); color:#B91C1C;}
+  .empty-state{text-align:center; padding:50px 20px; color:var(--light-text);}
+  h3.section-title{font-size:18px; margin:36px 0 16px;}
+</style>
+<link rel="stylesheet" href="css/static.css"></head>
+<body><aside class="static-banner"><strong>Static HTML preview</strong><span>Original VeriMarket design · sample listings and account states · no live transactions</span><a href="backend-required.html">About this version →</a></aside>
+
+<div class="admin-wrap">
+  <div class="admin-top">
+    <div>
+      <span class="eyebrow">🛡️ VeriMarket Admin</span>
+      <h2 style="font-size:24px; margin-top:4px;">Verification Queue</h2>
+    </div>
+    <a href="index.html" class="link-btn">Log Out</a>
+  </div>
+
+  <h3 class="section-title">Pending (0)</h3>
+
+      <div class="queue-card empty-state">Nothing waiting for review right now. 🎉</div>
+  
+  
+  <h3 class="section-title">Recent Decisions</h3>
+
+      <div class="queue-card empty-state">No decisions yet.</div>
+  
+  
+</div>
+<script src="js/main.js"></script><script src="js/static.js"></script></body>
+</html>

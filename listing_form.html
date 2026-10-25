@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Listing — VeriMarket</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .form-wrap{max-width:640px; margin:0 auto;}
+  .form-card{background:var(--card); border:1px solid #EEF2F7; border-radius:var(--radius); padding:40px; box-shadow:var(--shadow-sm);}
+  .form-group{margin-bottom:22px;}
+  .form-group label{display:block; font-weight:600; font-size:14px; margin-bottom:8px;}
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group textarea,
+  .form-group select{
+    width:100%; padding:13px 16px; border-radius:12px; border:1px solid #E2E8F0;
+    font-family:'Inter',sans-serif; font-size:14.5px; background:#fff; color:var(--dark);
+  }
+  .form-group textarea{resize:vertical; min-height:110px;}
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus{outline:none; border-color:var(--primary);}
+  .upload-box{
+    position:relative; border:2px dashed #E2E8F0; border-radius:14px; padding:22px;
+    text-align:center; cursor:pointer;
+  }
+  .upload-box:hover{border-color:var(--primary); background:var(--grad-soft);}
+  .upload-box input[type="file"]{position:absolute; inset:0; opacity:0; cursor:pointer;}
+  .upload-box .fname{font-size:12.5px; color:var(--primary); font-weight:600; margin-top:6px;}
+  .alert{border-radius:14px; padding:16px 18px; font-size:14px; margin-bottom:24px; font-weight:500;}
+  .alert-error{background:rgba(239,68,68,0.08); color:#B91C1C; border:1px solid rgba(239,68,68,0.2);}
+  .current-img{width:100%; max-height:220px; object-fit:cover; border-radius:12px; margin-bottom:14px;}
+</style>
+<link rel="stylesheet" href="css/static.css"></head>
+<body><aside class="static-banner"><strong>Static HTML preview</strong><span>Original VeriMarket design · sample listings and account states · no live transactions</span><a href="backend-required.html">About this version →</a></aside>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="logo-mark">V</span>VeriMarket</a>
+    <ul class="nav-links" id="static-nav-links">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="index.html#solution">How It Works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#stats">Safety</a></li>
+      <li><a href="index.html#compare">Pricing</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+              <a href="my_listings.html" class="link-btn">Sell</a>
+        <a href="messages.html" class="link-btn">
+          Messages<span class="msg-badge">1</span>        </a>
+        <span style="font-size:14px; font-weight:600; margin-right:6px;">
+          Hi, Example Seller ✓        </span>
+        <a href="verify.html" class="link-btn">Verified</a>
+        <a href="index.html" class="btn btn-primary">Log Out</a>
+          </div>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="static-nav-links">☰</button>
+  </nav>
+</header>
+
+<section style="padding:70px 0;">
+  <div class="container form-wrap">
+
+    
+      <div class="section-head" style="margin-bottom:36px;">
+        <span class="eyebrow">🛍️ New Listing</span>
+        <h2>List Something for Sale</h2>
+      </div>
+
+      <div class="form-card">
+        
+        <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+          
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="e.g. Gaming Laptop, barely used"
+                   value="" required>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Condition, details, why you're selling..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="price">Price (£)</label>
+            <input type="number" id="price" name="price" step="0.01" min="0.01" placeholder="0.00"
+                   value="" required>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="" disabled selected>Select a category</option>
+                              <option value="Electronics" >Electronics</option>
+                              <option value="Fashion" >Fashion</option>
+                              <option value="Home &amp; Garden" >Home &amp; Garden</option>
+                              <option value="Vehicles" >Vehicles</option>
+                              <option value="Sports &amp; Outdoors" >Sports &amp; Outdoors</option>
+                              <option value="Books &amp; Media" >Books &amp; Media</option>
+                              <option value="Other" >Other</option>
+                          </select>
+          </div>
+
+          <div class="form-group">
+            <label>Photo</label>
+                        <div class="upload-box">
+              <input type="file" name="image" accept="image/*" onchange="document.getElementById('fn').textContent=this.files.length?this.files[0].name:''">
+              <div>📷 Click or drag a photo here</div>
+              <div class="fname" id="fn"></div>
+            </div>
+            <div style="font-size:12.5px; color:var(--light-text); margin-top:6px;">JPG, PNG, or WEBP — max 6MB</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Post Listing</button>
+        </fieldset></form>
+      </div>
+
+      </div>
+</section>
+
+<script src="js/main.js"></script><script src="js/static.js"></script></body>
+</html>

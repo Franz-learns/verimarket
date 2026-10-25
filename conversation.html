@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example Seller — VeriMarket</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .thread-wrap{max-width:640px; margin:0 auto;}
+  .thread-head{
+    display:flex; align-items:center; gap:14px; background:var(--card); border:1px solid #EEF2F7;
+    border-radius:14px 14px 0 0; padding:16px 20px;
+  }
+  .thread-thumb{
+    width:44px; height:44px; border-radius:10px; background:linear-gradient(135deg,#E0E7FF,#CFFAFE);
+    display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; overflow:hidden;
+  }
+  .thread-thumb img{width:100%; height:100%; object-fit:cover;}
+  .thread-body{flex:1;}
+  .thread-name{font-weight:700; font-size:15px;}
+  .thread-listing{font-size:12.5px; color:var(--primary); font-weight:600;}
+  .thread-listing a{color:inherit;}
+  .thread-messages{
+    background:#F8FAFC; border-left:1px solid #EEF2F7; border-right:1px solid #EEF2F7;
+    padding:24px 20px; min-height:320px; display:flex; flex-direction:column; gap:12px;
+  }
+  .bubble{max-width:75%; padding:11px 15px; border-radius:16px; font-size:14px; line-height:1.5;}
+  .bubble-mine{align-self:flex-end; background:var(--grad); color:#fff; border-bottom-right-radius:4px;}
+  .bubble-theirs{align-self:flex-start; background:#fff; border:1px solid #EEF2F7; border-bottom-left-radius:4px;}
+  .bubble-time{font-size:10.5px; opacity:.7; margin-top:4px;}
+  .thread-form{
+    display:flex; gap:10px; background:var(--card); border:1px solid #EEF2F7;
+    border-radius:0 0 14px 14px; padding:16px 20px;
+  }
+  .thread-form textarea{
+    flex:1; resize:none; min-height:44px; max-height:120px; padding:11px 14px; border-radius:12px;
+    border:1px solid #E2E8F0; font-family:'Inter',sans-serif; font-size:14px;
+  }
+  .thread-form textarea:focus{outline:none; border-color:var(--primary);}
+</style>
+<link rel="stylesheet" href="css/static.css"></head>
+<body><aside class="static-banner"><strong>Static HTML preview</strong><span>Original VeriMarket design · sample listings and account states · no live transactions</span><a href="backend-required.html">About this version →</a></aside>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="logo-mark">V</span>VeriMarket</a>
+    <ul class="nav-links" id="static-nav-links">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="index.html#solution">How It Works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#stats">Safety</a></li>
+      <li><a href="index.html#compare">Pricing</a></li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+              <a href="my_listings.html" class="link-btn">Sell</a>
+        <a href="messages.html" class="link-btn">
+          Messages        </a>
+        <span style="font-size:14px; font-weight:600; margin-right:6px;">
+          Hi, Demo Visitor        </span>
+        <a href="verify.html" class="link-btn">Get Verified</a>
+        <a href="index.html" class="btn btn-primary">Log Out</a>
+          </div>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="static-nav-links">☰</button>
+  </nav>
+</header>
+
+<section style="padding:50px 0;">
+  <div class="container thread-wrap">
+
+    <a href="messages.html" style="font-size:13.5px; color:var(--light-text); text-decoration:none; display:inline-block; margin-bottom:14px;">← Back to Messages</a>
+
+    <div class="thread-head">
+      <div class="thread-thumb">
+        🛍️      </div>
+      <div class="thread-body">
+        <div class="thread-name">Example Seller</div>
+        <div class="thread-listing">
+          <a href="listing-1.html">Re: Wireless Headphones</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="thread-messages">
+                      <div class="bubble bubble-mine">
+          <div>Example message: is this item still available?</div>
+          <div class="bubble-time">2026-10-25 10:00:16</div>
+        </div>
+                      <div class="bubble bubble-theirs">
+          <div>Example reply: yes, happy to answer your questions.</div>
+          <div class="bubble-time">2026-10-25 10:00:16</div>
+        </div>
+          </div>
+
+    <div class="static-form-note">Layout preview only. This action requires the PHP application.</div><form action="backend-required.html"><fieldset disabled style="border:0;padding:0;margin:0;min-width:0;">
+            <textarea name="message" placeholder="Write a message..." required></textarea>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </fieldset></form>
+
+  </div>
+</section>
+
+<script src="js/main.js"></script><script src="js/static.js"></script></body>
+</html>
